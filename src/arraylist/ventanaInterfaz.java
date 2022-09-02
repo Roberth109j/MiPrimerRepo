@@ -85,7 +85,17 @@ public class ventanaInterfaz extends javax.swing.JFrame {
 
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
+        botonAgregar.setBackground(new java.awt.Color(52, 152, 219));
+        botonAgregar.setForeground(new java.awt.Color(0, 0, 0));
         botonAgregar.setText("Agregar");
+        botonAgregar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botonAgregarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botonAgregarMouseExited(evt);
+            }
+        });
         botonAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonAgregarActionPerformed(evt);
@@ -93,6 +103,8 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         });
         jPanel3.add(botonAgregar);
 
+        botonMostrar.setBackground(new java.awt.Color(52, 152, 219));
+        botonMostrar.setForeground(new java.awt.Color(0, 0, 0));
         botonMostrar.setText("Mostrar");
         botonMostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +113,8 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         });
         jPanel3.add(botonMostrar);
 
+        botonOrdenar.setBackground(new java.awt.Color(52, 152, 219));
+        botonOrdenar.setForeground(new java.awt.Color(0, 0, 0));
         botonOrdenar.setText("Ordenar");
         botonOrdenar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,6 +191,21 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         resultado2.setText(mensajeLista);
         }
     }//GEN-LAST:event_botonOrdenarActionPerformed
+
+    // Cambiando color a los botones  
+    
+    private void botonAgregarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonAgregarMouseEntered
+        // TODO add your handling code here:
+        botonAgregar.setBackground(new java.awt.Color(231, 76, 60));
+        botonAgregar.setForeground(new java.awt.Color(0, 0, 0));
+        
+    }//GEN-LAST:event_botonAgregarMouseEntered
+
+    private void botonAgregarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonAgregarMouseExited
+        // TODO add your handling code here:
+         botonAgregar.setBackground(new java.awt.Color(52, 152, 219));
+        botonAgregar.setForeground(new java.awt.Color(0, 0, 0));   
+    }//GEN-LAST:event_botonAgregarMouseExited
 
     /**
      * @param args the command line arguments
