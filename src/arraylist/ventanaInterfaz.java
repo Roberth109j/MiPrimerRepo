@@ -74,15 +74,15 @@ public class ventanaInterfaz extends javax.swing.JFrame {
             resultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(resultadoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(resultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(187, Short.MAX_VALUE))
+                .addComponent(resultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(128, Short.MAX_VALUE))
         );
         resultadoLayout.setVerticalGroup(
             resultadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(resultadoLayout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(resultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(65, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, resultadoLayout.createSequentialGroup()
+                .addContainerGap(45, Short.MAX_VALUE)
+                .addComponent(resultado2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42))
         );
 
         getContentPane().add(resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 400, 140));
@@ -254,8 +254,6 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         
     }//GEN-LAST:event_botonOrdenarMouseExited
 
-    //hola mundo 
-    
     /**
      * @param args the command line arguments
      */
