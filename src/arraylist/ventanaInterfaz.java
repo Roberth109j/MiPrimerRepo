@@ -35,13 +35,13 @@ public class ventanaInterfaz extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         numero = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        Icono = new javax.swing.JLabel();
         resultado = new javax.swing.JPanel();
         resultado2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        botonAgregar = new javax.swing.JButton();
-        botonMostrar = new javax.swing.JButton();
-        botonOrdenar = new javax.swing.JButton();
+        btnAgregar = new javax.swing.JButton();
+        btnMostrar = new javax.swing.JButton();
+        btnOrdenar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -57,10 +57,13 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         });
         jPanel1.add(numero);
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 0));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arraylist/bombilla.png"))); // NOI18N
-        jPanel1.add(jLabel1);
+        Icono.setBackground(new java.awt.Color(0, 204, 204));
+        Icono.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Icono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arraylist/puntos.gif"))); // NOI18N
+        Icono.setMaximumSize(new java.awt.Dimension(50, 50));
+        Icono.setMinimumSize(new java.awt.Dimension(50, 50));
+        Icono.setPreferredSize(new java.awt.Dimension(50, 50));
+        jPanel1.add(Icono);
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 100));
 
@@ -89,59 +92,59 @@ public class ventanaInterfaz extends javax.swing.JFrame {
 
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
-        botonAgregar.setBackground(new java.awt.Color(61, 193, 211));
-        botonAgregar.setForeground(new java.awt.Color(0, 0, 0));
-        botonAgregar.setText("Agregar");
-        botonAgregar.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnAgregar.setBackground(new java.awt.Color(61, 193, 211));
+        btnAgregar.setForeground(new java.awt.Color(0, 0, 0));
+        btnAgregar.setText("Agregar");
+        btnAgregar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                botonAgregarMouseEntered(evt);
+                btnAgregarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                botonAgregarMouseExited(evt);
+                btnAgregarMouseExited(evt);
             }
         });
-        botonAgregar.addActionListener(new java.awt.event.ActionListener() {
+        btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonAgregarActionPerformed(evt);
+                btnAgregarActionPerformed(evt);
             }
         });
-        jPanel3.add(botonAgregar);
+        jPanel3.add(btnAgregar);
 
-        botonMostrar.setBackground(new java.awt.Color(61, 193, 211));
-        botonMostrar.setForeground(new java.awt.Color(0, 0, 0));
-        botonMostrar.setText("Mostrar");
-        botonMostrar.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnMostrar.setBackground(new java.awt.Color(61, 193, 211));
+        btnMostrar.setForeground(new java.awt.Color(0, 0, 0));
+        btnMostrar.setText("Mostrar");
+        btnMostrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                botonMostrarMouseEntered(evt);
+                btnMostrarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                botonMostrarMouseExited(evt);
+                btnMostrarMouseExited(evt);
             }
         });
-        botonMostrar.addActionListener(new java.awt.event.ActionListener() {
+        btnMostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonMostrarActionPerformed(evt);
+                btnMostrarActionPerformed(evt);
             }
         });
-        jPanel3.add(botonMostrar);
+        jPanel3.add(btnMostrar);
 
-        botonOrdenar.setBackground(new java.awt.Color(61, 193, 211));
-        botonOrdenar.setForeground(new java.awt.Color(0, 0, 0));
-        botonOrdenar.setText("Ordenar");
-        botonOrdenar.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnOrdenar.setBackground(new java.awt.Color(61, 193, 211));
+        btnOrdenar.setForeground(new java.awt.Color(0, 0, 0));
+        btnOrdenar.setText("Ordenar");
+        btnOrdenar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                botonOrdenarMouseEntered(evt);
+                btnOrdenarMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                botonOrdenarMouseExited(evt);
+                btnOrdenarMouseExited(evt);
             }
         });
-        botonOrdenar.addActionListener(new java.awt.event.ActionListener() {
+        btnOrdenar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonOrdenarActionPerformed(evt);
+                btnOrdenarActionPerformed(evt);
             }
         });
-        jPanel3.add(botonOrdenar);
+        jPanel3.add(btnOrdenar);
 
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 400, 60));
 
@@ -149,7 +152,7 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void botonAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAgregarActionPerformed
+    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
        // resultado2.setText (numero.getText());
        
@@ -163,7 +166,7 @@ public class ventanaInterfaz extends javax.swing.JFrame {
        listaNumeros [indice]=Integer.parseInt(numero.getText());
        indice++;
        numero.setText("");
-    }//GEN-LAST:event_botonAgregarActionPerformed
+    }//GEN-LAST:event_btnAgregarActionPerformed
  
     
     public static boolean validarNumeros(String datos)
@@ -176,7 +179,7 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_numeroActionPerformed
 
-    private void botonMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMostrarActionPerformed
+    private void btnMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostrarActionPerformed
         // TODO add your handling code here:
         String mensaje = " ";
         for (int i=0; i< indice ;i ++)
@@ -186,9 +189,9 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         }
         resultado2.setText(mensaje);
         
-    }//GEN-LAST:event_botonMostrarActionPerformed
+    }//GEN-LAST:event_btnMostrarActionPerformed
 
-    private void botonOrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonOrdenarActionPerformed
+    private void btnOrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenarActionPerformed
         // TODO add your handling code here:
         
         for(int i=0; i < (indice-1)  ;i ++)
@@ -210,49 +213,49 @@ public class ventanaInterfaz extends javax.swing.JFrame {
          mensajeLista = mensajeLista + listaNumeros [i]+"-";
         resultado2.setText(mensajeLista);
         }
-    }//GEN-LAST:event_botonOrdenarActionPerformed
+    }//GEN-LAST:event_btnOrdenarActionPerformed
 
     // Cambiando color a los botones  
     
-    private void botonAgregarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonAgregarMouseEntered
+    private void btnAgregarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarMouseEntered
         // TODO add your handling code here:
-        botonAgregar.setBackground(new java.awt.Color(231, 76, 60));
-        botonAgregar.setForeground(new java.awt.Color(0, 0, 0));
+        btnAgregar.setBackground(new java.awt.Color(231, 76, 60));
+        btnAgregar.setForeground(new java.awt.Color(0, 0, 0));
         
-    }//GEN-LAST:event_botonAgregarMouseEntered
+    }//GEN-LAST:event_btnAgregarMouseEntered
 
-    private void botonAgregarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonAgregarMouseExited
+    private void btnAgregarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAgregarMouseExited
         // TODO add your handling code here:
-         botonAgregar.setBackground(new java.awt.Color(52, 152, 219));
-        botonAgregar.setForeground(new java.awt.Color(0, 0, 0));   
-    }//GEN-LAST:event_botonAgregarMouseExited
+         btnAgregar.setBackground(new java.awt.Color(52, 152, 219));
+        btnAgregar.setForeground(new java.awt.Color(0, 0, 0));   
+    }//GEN-LAST:event_btnAgregarMouseExited
 
-    private void botonMostrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMostrarMouseEntered
-        // TODO add your handling code here:
-        
-        botonMostrar.setBackground(new java.awt.Color(241, 196, 15));
-        botonMostrar.setForeground(new java.awt.Color(0, 0, 0));
-    }//GEN-LAST:event_botonMostrarMouseEntered
-
-    private void botonMostrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMostrarMouseExited
+    private void btnMostrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMostrarMouseEntered
         // TODO add your handling code here:
         
-        botonMostrar.setBackground(new java.awt.Color(52, 152, 219));
-        botonMostrar.setForeground(new java.awt.Color(0, 0, 0));  
-    }//GEN-LAST:event_botonMostrarMouseExited
+        btnMostrar.setBackground(new java.awt.Color(241, 196, 15));
+        btnMostrar.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_btnMostrarMouseEntered
 
-    private void botonOrdenarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonOrdenarMouseEntered
+    private void btnMostrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnMostrarMouseExited
         // TODO add your handling code here:
-        botonOrdenar.setBackground(new java.awt.Color(234, 134, 133));
-        botonOrdenar.setForeground(new java.awt.Color(0, 0, 0));
-    }//GEN-LAST:event_botonOrdenarMouseEntered
-
-    private void botonOrdenarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonOrdenarMouseExited
-        // TODO add your handling code here:
-        botonOrdenar.setBackground(new java.awt.Color(52, 152, 219));
-        botonOrdenar.setForeground(new java.awt.Color(0, 0, 0));
         
-    }//GEN-LAST:event_botonOrdenarMouseExited
+        btnMostrar.setBackground(new java.awt.Color(52, 152, 219));
+        btnMostrar.setForeground(new java.awt.Color(0, 0, 0));  
+    }//GEN-LAST:event_btnMostrarMouseExited
+
+    private void btnOrdenarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOrdenarMouseEntered
+        // TODO add your handling code here:
+        btnOrdenar.setBackground(new java.awt.Color(234, 134, 133));
+        btnOrdenar.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_btnOrdenarMouseEntered
+
+    private void btnOrdenarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnOrdenarMouseExited
+        // TODO add your handling code here:
+        btnOrdenar.setBackground(new java.awt.Color(52, 152, 219));
+        btnOrdenar.setForeground(new java.awt.Color(0, 0, 0));
+        
+    }//GEN-LAST:event_btnOrdenarMouseExited
 
     /**
      * @param args the command line arguments
@@ -290,10 +293,10 @@ public class ventanaInterfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton botonAgregar;
-    private javax.swing.JButton botonMostrar;
-    private javax.swing.JButton botonOrdenar;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel Icono;
+    private javax.swing.JButton btnAgregar;
+    private javax.swing.JButton btnMostrar;
+    private javax.swing.JButton btnOrdenar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField numero;
