@@ -49,6 +49,7 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new java.awt.GridLayout(1, 0));
 
+        numero.setForeground(new java.awt.Color(0, 0, 0));
         numero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 numeroActionPerformed(evt);
@@ -56,6 +57,7 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         });
         jPanel1.add(numero);
 
+        jLabel1.setBackground(new java.awt.Color(255, 255, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arraylist/bombilla.png"))); // NOI18N
         jPanel1.add(jLabel1);
@@ -63,6 +65,8 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 100));
 
         resultado.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        resultado2.setBackground(new java.awt.Color(51, 255, 0));
 
         javax.swing.GroupLayout resultadoLayout = new javax.swing.GroupLayout(resultado);
         resultado.setLayout(resultadoLayout);
@@ -85,7 +89,7 @@ public class ventanaInterfaz extends javax.swing.JFrame {
 
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
-        botonAgregar.setBackground(new java.awt.Color(52, 152, 219));
+        botonAgregar.setBackground(new java.awt.Color(61, 193, 211));
         botonAgregar.setForeground(new java.awt.Color(0, 0, 0));
         botonAgregar.setText("Agregar");
         botonAgregar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -103,9 +107,17 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         });
         jPanel3.add(botonAgregar);
 
-        botonMostrar.setBackground(new java.awt.Color(52, 152, 219));
+        botonMostrar.setBackground(new java.awt.Color(61, 193, 211));
         botonMostrar.setForeground(new java.awt.Color(0, 0, 0));
         botonMostrar.setText("Mostrar");
+        botonMostrar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botonMostrarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botonMostrarMouseExited(evt);
+            }
+        });
         botonMostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonMostrarActionPerformed(evt);
@@ -113,9 +125,17 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         });
         jPanel3.add(botonMostrar);
 
-        botonOrdenar.setBackground(new java.awt.Color(52, 152, 219));
+        botonOrdenar.setBackground(new java.awt.Color(61, 193, 211));
         botonOrdenar.setForeground(new java.awt.Color(0, 0, 0));
         botonOrdenar.setText("Ordenar");
+        botonOrdenar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                botonOrdenarMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                botonOrdenarMouseExited(evt);
+            }
+        });
         botonOrdenar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonOrdenarActionPerformed(evt);
@@ -207,6 +227,35 @@ public class ventanaInterfaz extends javax.swing.JFrame {
         botonAgregar.setForeground(new java.awt.Color(0, 0, 0));   
     }//GEN-LAST:event_botonAgregarMouseExited
 
+    private void botonMostrarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMostrarMouseEntered
+        // TODO add your handling code here:
+        
+        botonMostrar.setBackground(new java.awt.Color(241, 196, 15));
+        botonMostrar.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_botonMostrarMouseEntered
+
+    private void botonMostrarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonMostrarMouseExited
+        // TODO add your handling code here:
+        
+        botonMostrar.setBackground(new java.awt.Color(52, 152, 219));
+        botonMostrar.setForeground(new java.awt.Color(0, 0, 0));  
+    }//GEN-LAST:event_botonMostrarMouseExited
+
+    private void botonOrdenarMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonOrdenarMouseEntered
+        // TODO add your handling code here:
+        botonOrdenar.setBackground(new java.awt.Color(234, 134, 133));
+        botonOrdenar.setForeground(new java.awt.Color(0, 0, 0));
+    }//GEN-LAST:event_botonOrdenarMouseEntered
+
+    private void botonOrdenarMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonOrdenarMouseExited
+        // TODO add your handling code here:
+        botonOrdenar.setBackground(new java.awt.Color(52, 152, 219));
+        botonOrdenar.setForeground(new java.awt.Color(0, 0, 0));
+        
+    }//GEN-LAST:event_botonOrdenarMouseExited
+
+    //hola mundo 
+    
     /**
      * @param args the command line arguments
      */
